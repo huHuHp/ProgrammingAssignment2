@@ -1,3 +1,6 @@
+## rprog-014 ProgrammingAssignment2
+## Mark Anderson
+
 ## Put comments here that give an overall description of what your
 ## functions do
 
