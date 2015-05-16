@@ -33,14 +33,14 @@ makeCacheMatrix <- function(m = matrix()) {
 ##   if called previous, it returns cached value
 ##   if called for the first time, it computes inverse and caches
 
-cacheSolve <- function(m_p) {
+cacheSolve <- function(m_p, ...) {
   inv <- m_p$getinverse()
   if(!is.null(inv)) {
     message("getting cached data")
     return(inv)
   }
   data <- m_p$get()
-  inv <- solve(data)
+  inv <- solve(data, ...)
   m_p$setinverse(inv)
   inv
 }
